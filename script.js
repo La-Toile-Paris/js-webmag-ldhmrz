@@ -13,11 +13,36 @@ function getData() {
 
       // TODO 1: REMPLIR LE HEADER
 
+      let nomJournal = document.getElementById("nom-journal");
+      let phraseAccroche = document.getElementById("phrase-accroche");
+      
+      nomJournal.textContent = "Le Journal du Web";
+      phraseAccroche.textContent = "Toute l’actualité du numérique";
+
       // TODO 2: REMPLIR LA NAVIGATION
+
+      let themesNav = document.getElementById("themes-nav");
+
+      themes.forEach(theme => {
+        themesNav.insertAdjacentHTML(
+          "beforeend",
+          `<a href="#" class="nav-theme-btn">${theme}</a>`
+        );
+      });
+
 
       // TODO 3: REMPLIR L'ARTICLE PRINCIPAL
 
+      let containerHero = document.getElementById("article-principal");
+
+      let heroImage = data.cover.imageHero;
+      let heroCard = 
+
+      containerHero = `<di<img id="hero-image">`
+
       // TODO 4: REMPLIR LA GRILLE D'ARTICLES
+
+      let articlesGrid = document.getElementById("articles-grid");
 
       // TODO 5: REMPLIR LES THEMES
 
