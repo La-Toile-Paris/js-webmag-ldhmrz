@@ -139,18 +139,16 @@ function getData() {
 
       // TODO 7: REMPLIR LE BOUTON CALL TO ACTION
 
-      let footerContainer = document.querySelector(".footer .container");
+      let footerContainer = document.getElementById("call-to-action");
 
       let ctaText = data.cta.text;
       let ctaLabel = data.cta.label;
 
       let ctaHTML =
-      `<p>${ctaText}</p>
-        <div class="cta-button">
-          <div>
-            <button class="cta-button">${ctaLabel}</button>
-          </div>
-        </div>`
+      `<div>
+        <p class="footer p ">${ctaText}</p>
+        <button class="cta-button">S'abonner</button>
+       </div>`
 
       footerContainer.innerHTML += ctaHTML;
 
